@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Bookstore Application — Internship Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React single-page bookstore application with authentication-aware routes and workflows for books, categories, users, profiles and a shopping cart.
 
-## Available Scripts
+## Technology stack
 
-In the project directory, you can run:
+- React 18
+- React Router 6
+- Material-UI 4
+- Axios
+- Formik and Yup
+- React Toastify
+- React Testing Library
 
-### `npm start`
+## Features represented in the application
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Login and registration screens
+- Protected routes based on authentication state
+- Book listing, creation and editing
+- Category management
+- User management and profile updates
+- Shopping cart
+- Shared authentication and cart context
+- Form validation and toast notifications
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Install a current Node.js LTS release and npm.
 
-### `npm run build`
+### Install dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Start development server
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm start
+```
 
-### `npm run eject`
+Open [http://localhost:3000](http://localhost:3000).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Available scripts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Command | Description |
+|---|---|
+| `npm start` | Start the development server |
+| `npm test` | Run tests |
+| `npm run build` | Generate a production build |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Source layout
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```text
+src/
+├── assets/
+├── components/
+├── constant/
+├── context/
+├── pages/
+├── utils/
+├── App.js
+└── index.js
+public/
+package.json
+```
 
-## Learn More
+## Implementation notes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- React Router handles client-side navigation.
+- Authentication and cart state are provided through React context.
+- Formik and Yup support form state and validation.
+- Axios is included for HTTP communication.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Repository hygiene
 
-### Code Splitting
+Install dependencies with `npm install`; do not commit the generated `node_modules/` directory. Keep environment-specific credentials outside version control.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Maintainer
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Shyam Katariya](https://github.com/Shyam-Katariya) · [Portfolio](https://mediumturquoise-fox-633667.hostingersite.com/shyam.html)
